@@ -1,0 +1,447 @@
+/*------------------------*/
+/* -----  GENERALES  -----*/
+/*------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: #28df99;
+}
+a:hover {
+  padding: 15px;
+  color: #133b5c;
+}
+.error {
+  color: red;
+  font-size: 0.7rem;
+}
+.container {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+/*------------------------*/
+/* ----- ENCABEZADO  -----*/
+/*------------------------*/
+header {
+  width: 100%;
+  height: 40px;
+}
+header .container {
+  width: 100%;
+  position: fixed;
+  height: 45px;
+  top: 0;
+  z-index: 99;
+  background: #fff;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eaeaea;
+}
+header .container .menu-bar-pc {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .menu-bar-pc .top-menu {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+header .container .menu-bar-pc .top-menu a {
+  color: #082135;
+}
+header .container .menu-bar-pc .top-redes {
+  width: 20%;
+  height: auto;
+}
+header .container .menu-movil {
+  display: none;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+header .container .menu-movil .hamburger i {
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+header .container .menu-movil .hamburger i:hover {
+  color: #28df99;
+  cursor: pointer;
+}
+header .container .menu-movil .movile-menu {
+  padding: 10px 0px;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  margin-left: -100%;
+  transition: all 0.3s ease;
+}
+header .container .menu-movil .movile-menu .movil-redes {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+header .container .menu-movil .movile-menu .movil-menu {
+  width: 60%;
+  height: auto;
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+  text-align: center;
+}
+header .container .menu-movil .movile-menu .movil-menu a {
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+}
+/*------------------------*/
+/* ------- BANNER  -------*/
+/*------------------------*/
+.banner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+.banner .container h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.banner p {
+  font-size: 0.7rem;
+}
+/*------------------------*/
+/* ------ Galeria  -------*/
+/*------------------------*/
+.galeria {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.galeria .images {
+  width: 45%;
+  height: 300px;
+  background-image: url(../img/imagen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+.galeria .images h2 {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images p {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images1 {
+  width: 55%;
+  height: 300px;
+  background-image: url(../img/imagen1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+.galeria .images1 h2 {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images1 p {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images2 {
+  width: 55%;
+  height: 300px;
+  background-image: url(../img/imagen2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+.galeria .images2 h2 {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images2 p {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images3 {
+  width: 45%;
+  height: 300px;
+  background-image: url(../img/imagen3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+}
+.galeria .images3 h2 {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.galeria .images3 p {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+/*------------------------*/
+/* ------ GALERIA  -------*/
+/*------------------------*/
+.pedidos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.pedidos .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pedidos .container form {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.pedidos .container form .input-group {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.pedidos .container form .input-group input[type="text"],
+.pedidos .container form .input-group input[type="email"],
+.pedidos .container form .input-group textarea {
+  width: 90%;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #28df99;
+  padding: 10px;
+  vertical-align: top;
+}
+.pedidos .container form .input-group input[type="text"]:focus,
+.pedidos .container form .input-group input[type="email"]:focus,
+.pedidos .container form .input-group textarea:focus {
+  border-bottom: 2px solid #28df99;
+}
+.pedidos .container form .input-group textarea {
+  max-width: 90%;
+  min-width: 90%;
+  min-height: 60px;
+  max-height: 150px;
+}
+.pedidos .container form .input-group label {
+  color: #92a899;
+}
+.pedidos .container form .input-group .label {
+  position: absolute;
+  font-size: 1rem;
+  line-height: -3rem;
+  margin-left: -29rem;
+  transition: all 0.3s ease;
+}
+.pedidos .container form .input-group .active {
+  margin-top: -30px;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+.pedidos .container form input[type="submit"] {
+  padding: 15px 30px;
+  background: none;
+  outline: none;
+  background: #28df99;
+  transition: all 0.3s ease;
+}
+.pedidos .container form input[type="submit"]:hover {
+  cursor: pointer;
+  padding: 20px 35px;
+  background: #14c27f;
+  color: white;
+}
+.pedidos .container .aside {
+  width: 50%;
+  height: auto;
+}
+.pedidos .container .aside .aside-top {
+  width: 100;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+}
+.pedidos .container .aside .aside-top h2 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #133b5c;
+}
+.pedidos .container .aside .aside-top p {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 15px;
+  background: rgba(197, 243, 242, 0.5);
+}
+/*------------------------*/
+/* ------ FOOTER  -------*/
+/*------------------------*/
+.footer {
+  width: 100%;
+  height: auto;
+  background: #e4ffed;
+  margin-top: 70px;
+}
+.footer .fondo-foot {
+  width: 100%;
+  height: 20px;
+  background: #d5fde3;
+}
+.footer .container {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer .container .widget {
+  width: 45%;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px 10px;
+}
+.footer .container .widget h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.footer .container .widget p {
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.footer .foot-redes {
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+}
+.footer .derechos {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.footer .derechos p {
+  font-size: 0.753434rem;
+}
+.footer .derechos h3 {
+  font-size: 0.9rem;
+}
+.footer .derechos h4 {
+  font-size: 0.7rem;
+}
+/*
+    MEDIA QUIERIES
+*/
+@media all and (max-width: 1190px) {
+  .pedidos .container form {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 840px) {
+  .pedidos .container form {
+    width: 85%;
+    margin-bottom: 20px;
+  }
+  .movile-menu .active {
+    margin-left: 0;
+  }
+  .galeria .images h2 {
+    display: none;
+  }
+  .galeria .images p {
+    display: none;
+  }
+  .galeria .images1 h2 {
+    display: none;
+  }
+  .galeria .images1 p {
+    display: none;
+  }
+  .galeria .images2 h2 {
+    display: none;
+  }
+  .galeria .images2 p {
+    display: none;
+  }
+  .galeria .images3 h2 {
+    display: none;
+  }
+  .galeria .images3 p {
+    display: none;
+  }
+  .footer .container .widget {
+    width: 70%;
+  }
+  .pedidos .container .aside {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  .footer .foot-redes {
+    width: 80%;
+  }
+}
+@media all and (max-width: 732px) {
+  header .container .menu-bar-pc {
+    display: none;
+  }
+  header .container .menu-movil {
+    display: flex;
+  }
+}
+@media all and (max-width: 688px) {
+  .pedidos .container form .input-group .label {
+    margin-left: -21rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .pedidos .container form .input-group .label {
+    margin-left: -21rem;
+  }
+  .footer .foot-redes {
+    width: 63%;
+  }
+  .footer .derechos {
+    width: 63%;
+  }
+  .pedidos .container form .input-group .label {
+    margin-left: -25rem;
+  }
+}
+@media all and (max-width: 590px) {
+  .pedidos .container form .input-group .label {
+    margin-left: -21rem;
+  }
+}
+@media all and (max-width: 490px) {
+  .pedidos .container form .input-group .label {
+    margin-left: -11rem;
+  }
+  .footer .derechos {
+    width: 80%;
+  }
+}
